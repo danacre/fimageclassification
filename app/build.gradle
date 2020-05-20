@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.soumio.inceptiontutorial"
+        applicationId "com.fypic.imageclassification"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
@@ -22,6 +22,10 @@ android {
         noCompress "tflite"
         noCompress "lite"
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
@@ -32,7 +36,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // dependency to allow us to crop square images
-    compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
     // TensorFlow lite dependency
-    compile 'org.tensorflow:tensorflow-lite:+'
+    implementation 'org.tensorflow:tensorflow-lite:+'
+    implementation 'org.jetbrains:annotations-java5:15.0'
 }
