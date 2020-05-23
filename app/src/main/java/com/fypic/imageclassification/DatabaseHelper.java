@@ -132,6 +132,38 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return userid;
     }
 
+    public Cursor getData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + "objects";
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
+
+    public Cursor getItemID(String name){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT " + "id" + " FROM " + "objects" +
+                " WHERE " + "object_material" + " = '" + name + "'";
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
+
+    public void updateObjectMaterial(String newMaterial, int id, String oldMaterial){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "UPDATE " + "objects" + " SET " + "object_material" +
+                " = '" + newMaterial + "' WHERE " + "id" + " = '" + id + "'" +
+                " AND " + "object_material" + " = '" + oldMaterial + "'";
+        db.execSQL(query);
+    }
+
+    public void deleteObject(int id, String name){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "DELETE FROM " + "objects" + " WHERE "
+                + "id" + " = '" + id + "'" +
+                " AND " + "object_material" + " = '" + name + "'";
+        db.execSQL(query);
+    }
+
+
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         String sqlUsers = "DROP TABLE IF EXISTS user_admin";

@@ -8,18 +8,20 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.soundcloud.android.crop.Crop;
 
 import java.io.File;
+import java.util.List;
 
 public class MainActivityLogged extends AppCompatActivity {
     private Button inceptionFloat;
@@ -44,6 +46,12 @@ public class MainActivityLogged extends AppCompatActivity {
         setContentView(R.layout.activity_main_logged);
         DatabaseHelper db;
         Button logout = findViewById(R.id.logout);
+        Button viewData = findViewById(R.id.button7);
+
+        viewData.setOnClickListener(v -> {
+            Intent intent=new Intent(this, ListActivity.class);
+            startActivity(intent);
+        });
 
 
         logout.setOnClickListener(v -> {
