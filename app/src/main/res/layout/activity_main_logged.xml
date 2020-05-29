@@ -4,58 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welcome"
         android:layout_width="match_parent"
-        android:layout_height="194dp"
-        android:gravity="center"
-        android:text="FYP Prototype 4"
-        android:textColor="#FF5722"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="IMAGE CLASSIFICATION"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:textColor="#FFFFFF"
         android:textSize="30sp" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="'AI' Button will lead you to the camera to take a photo and classify the item."
+        android:fontFamily="@font/proxima_nova_light"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/AIButton"
-        android:layout_width="361dp"
-        android:layout_height="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="16sp"
         android:layout_gravity="center"
-        android:background="#FF9800"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:background="@drawable/roundedbutton"
         android:onClick="aiClick"
         android:gravity="center"
         android:text="AI"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/description2"
         android:layout_width="match_parent"
-        android:layout_height="101dp"
-        android:text="TextView"
-        android:visibility="invisible" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="'View Data' Button will lead you to a list in which all of the data of materials collected will be displayed."
+        android:fontFamily="@font/proxima_nova_light"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="361dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center"
-        android:background="#FF9800"
-        android:text="Data on AI"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView8"
         android:layout_width="match_parent"
-        android:layout_height="149dp"
-        android:text="TextView"
-        android:visibility="invisible" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:padding="16sp"
+        android:text="View Data"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
 
     <Button
         android:id="@+id/logout"
-        android:layout_width="69dp"
-        android:layout_height="25dp"
-        android:background="#FF9800"
-        android:text="Log Out" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundedbutton2"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:padding="16sp"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="15sp" />
 
 </LinearLayout>

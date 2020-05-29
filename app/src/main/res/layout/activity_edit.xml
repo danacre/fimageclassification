@@ -2,21 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation = "horizontal"
+        android:orientation = "vertical"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Material"
+            android:fontFamily="@font/proxima_nova_thin"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
             android:textSize="20sp"
             android:layout_marginRight="10dp"/>
 
@@ -24,6 +28,9 @@
             android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
             android:inputType="none"
             android:clickable="false"
             android:cursorVisible="false"
@@ -32,42 +39,93 @@
             android:ems="10"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:fontFamily="@font/proxima_nova_thin"
+            android:textColor="#FFFFFF"
             android:id="@+id/edititem"
             android:gravity="center_horizontal" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/edittv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Change Material"
+            android:fontFamily="@font/proxima_nova_thin"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation = "horizontal"
-        android:gravity="center">
+        android:orientation="vertical"
+        android:layout_marginTop="11dp">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="METAL"
-            android:id="@+id/btnMetal"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="PAPER"
-            android:id="@+id/btnPaper"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="PLASTIC"
-            android:id="@+id/btnPlastic"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="WASTE"
-            android:id="@+id/btnWaste"/>
+            android:id="@+id/btnMetal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:layout_below="@id/selected_image"
+            android:layout_centerHorizontal="true"
+            android:text="Metal" />
 
+        <Button
+            android:id="@+id/btnPaper"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textAllCaps="false"
+            android:layout_height="40dp"
+            android:layout_below="@id/classify_image"
+            android:layout_centerHorizontal="true"
+            android:text="Paper" />
+
+        <Button
+            android:id="@+id/btnPlastic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_below="@id/classify_image"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:text="Plastic" />
+        <Button
+            android:id="@+id/btnWaste"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textAllCaps="false"
+            android:layout_below="@id/classify_image"
+            android:layout_centerHorizontal="true"
+            android:text="Waste" />
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_centerHorizontal="true"
@@ -75,21 +133,48 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="50dp"
+        android:orientation="vertical"
         >
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/options"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="DELETE"
-            android:id="@+id/btnDelete"/>
+            android:gravity="center"
+            android:text="Done?"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/proxima_nova_thin"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+/>
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="SAVE"
-            android:layout_toRightOf="@+id/btnDelete"
-            android:id="@+id/btnSave"/>
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textAllCaps="false"
+            android:layout_below="@id/classify_image"
+            android:layout_centerHorizontal="true"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textAllCaps="false"
+            android:layout_below="@id/classify_image"
+            android:layout_centerHorizontal="true"
+            android:text="Update" />
 
     </LinearLayout>
 
