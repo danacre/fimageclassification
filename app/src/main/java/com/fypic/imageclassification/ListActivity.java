@@ -54,6 +54,7 @@ public class ListActivity extends AppCompatActivity {
                 }
                 if(itemID > -1){
                     Intent editScreenIntent = new Intent(ListActivity.this, EditActivity.class);
+                    String.format("%d",itemID);
                     editScreenIntent.putExtra("id",itemID);
                     editScreenIntent.putExtra("name",name);
                     startActivity(editScreenIntent);

@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // filename in assets
-                chosen = "model.tflite";
+                chosen = "model2.tflite";
                 // model in not quantized
                 quant = false;
                 // open camera

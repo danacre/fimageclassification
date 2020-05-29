@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class EditActivity extends AppCompatActivity {
 
     private Button btnSave,btnDelete,btnMetal,btnPaper,btnPlastic,btnWaste;
-    private EditText edititem,editid;
+    private EditText edititem;
 
     DatabaseHelper db;
 
@@ -32,7 +32,6 @@ public class EditActivity extends AppCompatActivity {
         btnWaste = (Button) findViewById(R.id.btnWaste);
 
         edititem = (EditText) findViewById(R.id.edititem);
-        editid = (EditText) findViewById(R.id.edit_id);
         db = new DatabaseHelper(this);
 
         Intent editIntent = getIntent();
@@ -42,7 +41,6 @@ public class EditActivity extends AppCompatActivity {
         selectedName = editIntent.getStringExtra("name");
 
         //set the text to show the current selected name
-        editid.setText(Integer.toString(selectedID));
         edititem.setText(selectedName);
 
         btnMetal.setOnClickListener(new View.OnClickListener() {
