@@ -25,8 +25,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String sqlBin = "CREATE TABLE bin(id INTEGER PRIMARY KEY AUTOINCREMENT, bin_name VARCHAR);";
         String sqlOmb = "CREATE TABLE object_material_bin(id INTEGER PRIMARY KEY AUTOINCREMENT, object_id INTEGER, material_id INTEGER, bin_id INTEGER, info_id INTEGER, FOREIGN KEY(object_id) REFERENCES objects(id), FOREIGN KEY(material_id) REFERENCES material(id), FOREIGN KEY(bin_id) REFERENCES bin(id), FOREIGN KEY(info_id) REFERENCES information(id))";
 
-        String addMaterialColumn = String.format("INSERT INTO material(material_name) VALUES(\"cardboard\"),(\"glass\"),(\"metal\"),(\"paper\"),(\"plastic\"),(\"waste\");");
-        String addBinColumn = String.format("INSERT INTO bin(bin_name) VALUES(\"cardboard\"),(\"glass\"),(\"metal\"),(\"paper\"),(\"plastic\"),(\"waste\");");
+        String addMaterialMetal = String.format("INSERT INTO material(material_name,material_count) VALUES (\"Metal\",0)");
+        String addMaterialPaper = String.format("INSERT INTO material(material_name,material_count) VALUES (\"Paper\",0)");
+        String addMaterialPlastic = String.format("INSERT INTO material(material_name,material_count) VALUES (\"Plastic\",0)");
+        String addMaterialWaste = String.format("INSERT INTO material(material_name,material_count) VALUES (\"Waste\",0)");
+
+        String addBinMetal = String.format("INSERT INTO bin(bin_name) VALUES (\"Metal\")");
+        String addBinPaper = String.format("INSERT INTO bin(bin_name) VALUES (\"Paper\")");
+        String addBinPlastic = String.format("INSERT INTO bin(bin_name) VALUES (\"Plastic\")");
+        String addBinWaste = String.format("INSERT INTO bin(bin_name) VALUES (\"Waste\")");
+
         String account = String.format("INSERT INTO user_admin(user_name, user_password) VALUES (\"gf\",\"gf\")");
         sqLiteDatabase.execSQL(sqlUsers);
         sqLiteDatabase.execSQL(sqlObjects);
@@ -34,8 +42,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(sqlInformation);
         sqLiteDatabase.execSQL(sqlBin);
         sqLiteDatabase.execSQL(sqlOmb);
-        sqLiteDatabase.execSQL(addMaterialColumn);
-        sqLiteDatabase.execSQL(addBinColumn);
+        sqLiteDatabase.execSQL(addMaterialPaper);
+        sqLiteDatabase.execSQL(addMaterialMetal);
+        sqLiteDatabase.execSQL(addMaterialPlastic);
+        sqLiteDatabase.execSQL(addMaterialWaste);
+        sqLiteDatabase.execSQL(addBinPaper);
+        sqLiteDatabase.execSQL(addBinMetal);
+        sqLiteDatabase.execSQL(addBinPlastic);
+        sqLiteDatabase.execSQL(addBinWaste);
         sqLiteDatabase.execSQL(account);
 
     }
@@ -163,6 +177,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(query);
     }
 
+    public void updateMatCount(String material) {
+        String selectQuery = String.format("SELECT * FROM objects WHERE object_material=\"%s\";",material);
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor c = database.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        int total = c.getCount();
+        c.close();
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "UPDATE " + "material" + " SET " + "material_count" +
+                " = '" + (total+1-1) + "' WHERE " + "material_name" + " = '" + material + "'";
+        db.execSQL(query);
+
+    }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {

@@ -174,6 +174,7 @@ public class Classify extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 db.addObjects(Material.getText().toString());
+                db.updateMatCount(Material.getText().toString());
                 Toast.makeText(Classify.this, "Object Added!", Toast.LENGTH_SHORT).show();
             }
         });
