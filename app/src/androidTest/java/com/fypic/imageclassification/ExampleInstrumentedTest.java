@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.soumio.inceptiontutorial", appContext.getPackageName());
+        assertEquals("com.fypic.imageclassification", appContext.getPackageName());
     }
 }
