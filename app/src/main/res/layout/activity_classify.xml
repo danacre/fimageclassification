@@ -49,6 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/proxima_nova_light"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -82,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/proxima_nova_light"
                 android:textColor="#FFFFFF"
+                android:text=""
                 android:textSize="20sp" />
 
         </LinearLayout>

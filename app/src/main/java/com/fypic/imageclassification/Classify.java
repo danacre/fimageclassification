@@ -173,9 +173,15 @@ public class Classify extends AppCompatActivity {
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.addObjects(Material.getText().toString());
-                db.updateMatCount(Material.getText().toString());
-                Toast.makeText(Classify.this, "Object Added!", Toast.LENGTH_SHORT).show();
+                if (Material.getText().toString().length() < 1) {
+                    Toast.makeText(Classify.this, "Classify First!", Toast.LENGTH_SHORT).show();
+                }
+
+                else {
+                    db.addObjects(Material.getText().toString());
+                    db.updateMatCount(Material.getText().toString());
+                    Toast.makeText(Classify.this, "Object Added!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
