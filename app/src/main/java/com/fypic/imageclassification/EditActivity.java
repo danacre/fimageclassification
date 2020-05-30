@@ -78,6 +78,7 @@ public class EditActivity extends AppCompatActivity {
                 db.updateObjectMaterial(item,selectedID,selectedName);
                 Intent intent=new Intent(EditActivity.this, MainActivityLogged.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 Toast.makeText(EditActivity.this,"Updated", Toast.LENGTH_SHORT).show();
             }
         });
@@ -88,10 +89,17 @@ public class EditActivity extends AppCompatActivity {
                 db.deleteObject(selectedID,selectedName);
                 Intent intent=new Intent(EditActivity.this, MainActivityLogged.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 Toast.makeText(EditActivity.this,"Deleted", Toast.LENGTH_SHORT).show();
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 }

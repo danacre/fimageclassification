@@ -142,10 +142,12 @@ public class Classify extends AppCompatActivity {
                 if (ActLActivity.getLoginStatus() == true) {
                     Intent i = new Intent(Classify.this, MainActivityLogged.class);
                     startActivity(i);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 }
                 else {
                     Intent i = new Intent(Classify.this, MainActivity.class);
                     startActivity(i);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 }
             }
         });
@@ -196,6 +198,7 @@ public class Classify extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
 
     // loads tflite grapg from file
     private MappedByteBuffer loadModelFile() throws IOException {
@@ -278,5 +281,11 @@ public class Classify extends AppCompatActivity {
         Bitmap resizedBitmap = Bitmap.createBitmap(
                 bm, 0, 0, width, height, matrix, false);
         return resizedBitmap;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }

@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(v -> {
             Intent intent=new Intent(this, ActLActivity.class);
             startActivity(intent);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         });
 
         // request permission to use the camera on the user's phone

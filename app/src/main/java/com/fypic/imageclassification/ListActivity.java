@@ -54,39 +54,14 @@ public class ListActivity extends AppCompatActivity {
                 editScreenIntent.putExtra("id",listObj.get(position).getId());
                 editScreenIntent.putExtra("name",listObj.get(position).getMat());
                 startActivity(editScreenIntent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
     }
 
-    private void populateListView() {
-
-        /*//create and set adapter
-        ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listData);
-        lv.setAdapter(adapter);
-
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String name = adapterView.getItemAtPosition(i).toString();
-
-                Cursor data = db.getItemID(name);
-                int itemID = -1;
-                while(data.moveToNext()){
-                    itemID = data.getInt(0);
-                }
-                if(itemID > -1){
-                    Intent editScreenIntent = new Intent(ListActivity.this, EditActivity.class);
-                    String.format("%d",itemID);
-                    editScreenIntent.putExtra("id",itemID);
-                    editScreenIntent.putExtra("name",name);
-                    startActivity(editScreenIntent);
-                }
-                else{
-                    Toast.makeText(ListActivity.this, "Object Added!", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });*/
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
-
 }

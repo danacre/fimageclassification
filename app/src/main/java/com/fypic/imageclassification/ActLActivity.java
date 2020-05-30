@@ -39,6 +39,7 @@ public class ActLActivity extends AppCompatActivity {
                     Intent intent = new Intent(ActLActivity.this, MainActivityLogged.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     loggedin = true;
                     Toast.makeText(ActLActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
 
@@ -62,6 +63,12 @@ public class ActLActivity extends AppCompatActivity {
 
     public static void logout(){
         loggedin = false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 
