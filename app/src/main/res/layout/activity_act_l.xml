@@ -7,79 +7,86 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="58dp"
+        android:background="@drawable/gf_logo">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="0.9in"
+            android:fontFamily="@font/proxima_nova_thin"
             android:gravity="center"
             android:text="LOGIN"
-            android:fontFamily="@font/proxima_nova_thin"
             android:textColor="#FFFFFF"
-            android:textSize="30sp"
-            android:layout_marginTop="1in"/>
+            android:textSize="30sp" />
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"/>
 
         <EditText
-            android:layout_marginLeft="0.3in"
-            android:layout_marginRight="0.3in"
-            android:layout_marginTop="0.2in"
-            android:background="@drawable/et_bg"
             android:id="@+id/usernamel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="0.3in"
+            android:layout_marginTop="-0.2in"
+            android:layout_marginRight="0.3in"
+            android:background="@drawable/et_bg"
+            android:ems="10"
             android:fontFamily="@font/proxima_nova_thin"
+            android:hint="Username"
+            android:inputType="textPersonName"
             android:padding="16dp"
             android:textColor="#FFFFFF"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColorHint="#F6F6F6"
-            android:hint="Username" />
+            android:textColorHint="#F6F6F6" />
 
         <EditText
+            android:id="@+id/passwordl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0.3in"
-            android:layout_marginRight="0.3in"
             android:layout_marginTop="0.1in"
+            android:layout_marginRight="0.3in"
             android:background="@drawable/et_bg"
+            android:ems="10"
             android:fontFamily="@font/proxima_nova_thin"
-            android:id="@+id/passwordl"
+            android:hint="Password"
+            android:inputType="textPassword"
             android:padding="16dp"
             android:textColor="#FFFFFF"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:textColorHint="#F6F6F6"
-            android:hint="Password" />
-    </LinearLayout>
+            android:textColorHint="#F6F6F6" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-        <Button
-            android:layout_marginTop="0.3in"
-            android:layout_marginLeft="0.3in"
-            android:layout_marginRight="0.3in"
-            android:id="@+id/actlbuttonl"
-            android:background="@drawable/roundedbutton"
-            android:fontFamily="@font/proxima_nova_regular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:text="Login" />
+            <Button
+                android:id="@+id/actlbuttonl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.3in"
+                android:layout_marginTop="0.3in"
+                android:layout_marginRight="0.3in"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
 
+        </LinearLayout>
     </LinearLayout>
 
 
-</LinearLayout>

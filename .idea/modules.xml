@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="fypicrc/app" />
-      <module fileurl="file://$PROJECT_DIR$/fypicrc.iml" filepath="$PROJECT_DIR$/fypicrc.iml" group="fypicrc" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="fimageclassification/app" />
+      <module fileurl="file://$PROJECT_DIR$/fimageclassification.iml" filepath="$PROJECT_DIR$/fimageclassification.iml" group="fimageclassification" />
     </modules>
   </component>
 </project>
