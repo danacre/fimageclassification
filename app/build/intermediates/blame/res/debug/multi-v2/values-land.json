@@ -1,0 +1,55 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\18015241\\AndroidStudioProjects\\fimageclassification\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\18015241\\.gradle\\caches\\transforms-2\\files-2.1\\2d18b3a438bfcd0d8acbe9517100d968\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "312",
+                        "endLines": "9",
+                        "endColumns": "10",
+                        "endOffsets": "479"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\18015241\\.gradle\\caches\\transforms-2\\files-2.1\\0f5e4214bf281ebdfb3a0d9922a21b90\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\18015241\\.gradle\\caches\\transforms-2\\files-2.1\\2f4335bda4729a485713c1c0033e2134\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "171",
+                        "endColumns": "47",
+                        "endOffsets": "214"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endColumns": "47",
+                        "endOffsets": "307"
+                    }
+                }
+            ]
+        }
+    ]
+}
