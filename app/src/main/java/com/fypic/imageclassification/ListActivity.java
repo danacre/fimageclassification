@@ -1,4 +1,3 @@
-
 package com.fypic.imageclassification;
 
 import android.content.Intent;
@@ -23,7 +22,7 @@ public class ListActivity extends AppCompatActivity {
 
     DatabaseHelper db;
     private ListView lv;
-    String fl;
+    int fl;
     int sl;
 
     @Override
@@ -37,7 +36,7 @@ public class ListActivity extends AppCompatActivity {
         ArrayList<String> listData = new ArrayList<>();
         ArrayList<Object> listObj = new ArrayList<>();
         while(data.moveToNext()){
-            fl = data.getString(1);
+            fl = data.getInt(1);
             sl = data.getInt(0);
 
             Object obj = new Object(sl,fl);

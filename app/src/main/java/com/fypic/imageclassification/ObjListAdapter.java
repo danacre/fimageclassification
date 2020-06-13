@@ -46,11 +46,12 @@ public class ObjListAdapter extends ArrayAdapter<Object> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         //get the persons information
-        String mat = getItem(position).getMat();
         int id = getItem(position).getId();
+        int matid = getItem(position).getMatId();
+
 
         //Create the person object with the information
-        Object obj = new Object(id,mat);
+        Object obj = new Object(id,matid);
 
         //create the view result for showing the animation
         final View result;

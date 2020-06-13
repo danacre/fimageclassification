@@ -181,7 +181,6 @@ public class Classify extends AppCompatActivity {
 
                 else {
                     db.addObjects(Material.getText().toString());
-                    db.updateMatCount(Material.getText().toString());
                     Toast.makeText(Classify.this, "Object Added!", Toast.LENGTH_SHORT).show();
                 }
             }

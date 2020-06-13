@@ -86,7 +86,7 @@ public class EditActivity extends AppCompatActivity {
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.deleteObject(selectedID,selectedName);
+                db.deleteObject(selectedID);
                 Intent intent=new Intent(EditActivity.this, MainActivityLogged.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

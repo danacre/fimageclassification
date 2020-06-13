@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\18015241\\AndroidStudioProjects\\fimageclassification\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
+            "outputFile": "D:\\fimageclassificationv2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\18015241\\.gradle\\caches\\transforms-2\\files-2.1\\1e11dc636477b49557a5556530fee62c\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\025824762528fc994be91260c0359621\\res\\values-zh-rCN\\values-zh-rCN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\18015241\\.gradle\\caches\\transforms-2\\files-2.1\\0f5e4214bf281ebdfb3a0d9922a21b90\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\values-zh-rCN\\values-zh-rCN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

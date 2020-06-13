@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\18015241\\AndroidStudioProjects\\fimageclassification\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "D:\\fimageclassificationv2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\18015241\\.gradle\\caches\\transforms-2\\files-2.1\\0f5e4214bf281ebdfb3a0d9922a21b90\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\18015241\\.gradle\\caches\\transforms-2\\files-2.1\\2f4335bda4729a485713c1c0033e2134\\res\\values-large\\values-large.xml",
+                    "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\b18b62554ffaa459ce3dc17c3b68780f\\res\\values-large\\values-large.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\18015241\\.gradle\\caches\\transforms-2\\files-2.1\\2d18b3a438bfcd0d8acbe9517100d968\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\2e3a5376fa390aee52a569a5c8fad15b\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
