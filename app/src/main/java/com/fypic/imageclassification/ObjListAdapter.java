@@ -14,10 +14,6 @@ import androidx.annotation.NonNull;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by User on 3/14/2017.
- */
-
 public class ObjListAdapter extends ArrayAdapter<Object> {
 
     private static final String TAG = "ObjListAdapter";
