@@ -118,6 +118,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return data;
     }
 
+    public int getMatAllCount() {
+        String selectQuery = String.format("SELECT * FROM objects");
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor c = database.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        int total = c.getCount();
+        c.close();
+        return total;
+    }
+
     public int getMatMetalCount() {
         String selectQuery = String.format("SELECT * FROM objects WHERE material_id = 2");
         SQLiteDatabase database = this.getReadableDatabase();

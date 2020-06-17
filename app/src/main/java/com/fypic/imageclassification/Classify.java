@@ -77,6 +77,7 @@ public class Classify extends AppCompatActivity {
     private Button add_button;
     private TextView Material;
     private TextView Confidence;
+    private TextView ItemId;
 
     // priority queue that will hold the top results from the CNN
     private PriorityQueue<Map.Entry<String, Float>> sortedLabels =
@@ -122,10 +123,11 @@ public class Classify extends AppCompatActivity {
 
         setContentView(R.layout.activity_classify);
 
-        // labels that hold top three results of CNN
+
         Material = (TextView) findViewById(R.id.textView5);
-        // displays the probabilities of top labels
         Confidence = (TextView) findViewById(R.id.textView7);
+        ItemId = (TextView) findViewById(R.id.objidno);
+
         // initialize imageView that displays selected image to the user
         selected_image = (ImageView) findViewById(R.id.selected_image);
 
@@ -266,6 +268,7 @@ public class Classify extends AppCompatActivity {
         // set the corresponding textviews with the results
         Material.setText(topLables[3]);
         Confidence.setText(topConfidence[3]);
+        ItemId.setText(Integer.toString(db.getMatAllCount() + 1));
     }
 
 
