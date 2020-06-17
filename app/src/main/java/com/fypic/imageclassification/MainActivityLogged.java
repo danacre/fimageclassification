@@ -38,8 +38,6 @@ public class MainActivityLogged extends AppCompatActivity {
     // string to send to next activity that describes the chosen classifier
     private String chosen;
 
-    //boolean value dictating if chosen model is quantized version or not.
-    private boolean quant;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,8 +86,6 @@ public class MainActivityLogged extends AppCompatActivity {
             public void onClick(View view) {
                 // filename in assets
                 chosen = "model2.tflite";
-                // model in not quantized
-                quant = false;
                 // open camera
                 openCameraIntent();
             }

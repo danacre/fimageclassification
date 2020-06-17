@@ -28,6 +28,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.fypic.imageclassification.SummaryActivity" />
         <activity android:name="com.fypic.imageclassification.EditActivity" />
         <activity android:name="com.fypic.imageclassification.ListActivity" />
         <activity android:name="com.fypic.imageclassification.MainActivityLogged" />

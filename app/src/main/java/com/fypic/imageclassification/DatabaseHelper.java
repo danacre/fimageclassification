@@ -21,12 +21,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String sqlUsers = "CREATE TABLE user_admin(user_id INTEGER PRIMARY KEY AUTOINCREMENT, user_name VARCHAR NOT NULL, user_password VARCHAR NOT NULL);";
         String sqlObjects = "CREATE TABLE objects(object_id INTEGER PRIMARY KEY AUTOINCREMENT, material_id INTEGER NOT NULL, FOREIGN KEY(material_id) REFERENCES material(material_id));";
         String sqlMaterial = "CREATE TABLE material(material_id INTEGER PRIMARY KEY AUTOINCREMENT, material_name VARCHAR NOT NULL);";
+
         String addMaterialMetal = String.format("INSERT INTO material(material_name) VALUES (\"Metal\")");
         String addMaterialPaper = String.format("INSERT INTO material(material_name) VALUES (\"Paper\")");
         String addMaterialPlastic = String.format("INSERT INTO material(material_name) VALUES (\"Plastic\")");
         String addMaterialWaste = String.format("INSERT INTO material(material_name) VALUES (\"Waste\")");
 
         String account = String.format("INSERT INTO user_admin(user_name, user_password) VALUES (\"gf\",\"gf\")");
+
         sqLiteDatabase.execSQL(sqlUsers);
         sqLiteDatabase.execSQL(sqlObjects);
         sqLiteDatabase.execSQL(sqlMaterial);
@@ -60,6 +62,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String selectQuery = String.format("SELECT material_id FROM material WHERE material_name=\"%s\"", material);
         SQLiteDatabase database = this.getReadableDatabase();
+
         Cursor cursor = database.rawQuery(selectQuery, null);
         cursor.moveToFirst();
         int id = cursor.getInt(cursor.getColumnIndex("material_id"));
@@ -75,6 +78,84 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String query = "SELECT * FROM " + "objects";
         Cursor data = db.rawQuery(query, null);
         return data;
+    }
+
+    public Cursor getAllData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + "objects";
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
+
+    public Cursor getPaperData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM objects WHERE material_id = 1;";
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
+
+    public Cursor getMetalData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + "objects" + " WHERE " + "material_id" +
+                " = " + " 2";
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
+
+    public Cursor getPlasticData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + "objects" + " WHERE " + "material_id" +
+                " = " + " 3";
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
+
+    public Cursor getWasteData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + "objects" + " WHERE " + "material_id" +
+                " = " + " 4";
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
+
+    public int getMatMetalCount() {
+        String selectQuery = String.format("SELECT * FROM objects WHERE material_id = 2");
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor c = database.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        int total = c.getCount();
+        c.close();
+        return total;
+    }
+
+    public int getMatPlasticCount() {
+        String selectQuery = String.format("SELECT * FROM objects WHERE material_id = 3");
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor c = database.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        int total = c.getCount();
+        c.close();
+        return total;
+    }
+
+    public int getMatPaperCount() {
+        String selectQuery = String.format("SELECT * FROM objects WHERE material_id = 1");
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor c = database.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        int total = c.getCount();
+        c.close();
+        return total;
+    }
+
+    public int getMatWasteCount() {
+        String selectQuery = String.format("SELECT * FROM objects WHERE material_id = 4");
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor c = database.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        int total = c.getCount();
+        c.close();
+        return total;
     }
 
     public void updateObjectMaterial(String newMaterial, int id, String oldMaterial){

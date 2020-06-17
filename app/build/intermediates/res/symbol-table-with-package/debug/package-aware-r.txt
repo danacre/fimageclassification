@@ -1156,6 +1156,7 @@ id add_object
 id aimofapplication
 id alertTitle
 id all
+id allBtn
 id always
 id async
 id auto
@@ -1228,6 +1229,7 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id horizontalScrollView
 id icon
 id icon_group
 id ifRoom
@@ -1250,6 +1252,9 @@ id loginbtn
 id logout
 id masked
 id message
+id metalBtn
+id metalcount
+id metaldesc
 id middle
 id mini
 id mtrl_child_content_container
@@ -1267,6 +1272,9 @@ id on
 id options
 id outline
 id packed
+id paperBtn
+id papercount
+id paperdesc
 id parallax
 id parent
 id parentPanel
@@ -1274,6 +1282,9 @@ id parent_matrix
 id passwordl
 id percent
 id pin
+id plasticBtn
+id plasticcount
+id plasticdesc
 id progress_circular
 id progress_horizontal
 id radio
@@ -1323,6 +1334,8 @@ id start
 id stretch
 id submenuarrow
 id submit_area
+id summarybutton
+id summaryheader
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -1337,6 +1350,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textView1
 id textView10
 id textView2
@@ -1370,6 +1384,9 @@ id useLogo
 id usernamel
 id view_offset_helper
 id visible
+id wasteBtn
+id wastecount
+id wastedesc
 id welcome
 id withText
 id wrap
@@ -1435,6 +1452,7 @@ layout activity_edit
 layout activity_list
 layout activity_main
 layout activity_main_logged
+layout activity_summary
 layout adap_layout
 layout crop__activity_crop
 layout crop__layout_done_cancel

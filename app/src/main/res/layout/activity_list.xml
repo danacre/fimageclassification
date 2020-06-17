@@ -16,18 +16,111 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:layout_marginBottom="25dp"
+
             android:layout_weight="1"
             android:gravity="center"
             android:text="LIST"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/proxima_nova_light"
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
     </LinearLayout>
 
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="90dp"
+        >
+
+        <Button
+            android:id="@+id/allBtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:text="All"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/paperBtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:text="Paper"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/metalBtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:gravity="center"
+            android:text="Metal"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/plasticBtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:gravity="center"
+            android:text="Plastic"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/wasteBtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:gravity="center"
+            android:text="Waste"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
     <androidx.cardview.widget.CardView
         android:layout_width = "match_parent"
-        android:layout_height = "500dp"
+        android:layout_height = "400dp"
         android:layout_margin = "16sp"
         app:cardCornerRadius="19dp"
         >
@@ -37,5 +130,22 @@
             android:id="@+id/listView"/>
 
     </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/summarybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp"
+            android:background="@drawable/roundedbutton"
+            android:textAllCaps="false"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="Data Summary" />
+    </LinearLayout>
 
 </LinearLayout>
