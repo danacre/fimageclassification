@@ -20,12 +20,12 @@
         "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\font\\proxima_nova_light.otf"
     },
     {
-        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_clipart1002706.png.flat",
-        "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\drawable\\clipart1002706.png"
-    },
-    {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_clipart1002706.png.flat",
+        "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\drawable\\clipart1002706.png"
     },
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -108,12 +108,12 @@
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\2e3a5376fa390aee52a569a5c8fad15b\\res\\anim\\design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_out.xml.flat",
+        "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\2e3a5376fa390aee52a569a5c8fad15b\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_password_icon.xml.flat",
@@ -168,12 +168,12 @@
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\anim\\btn_checkbox_to_unchecked_check_path_merged_animation.xml"
     },
     {
-        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
-        "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
+        "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -208,12 +208,12 @@
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\anim\\abc_tooltip_enter.xml"
     },
     {
-        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_checkbox_checked_mtrl.xml.flat",
-        "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable\\btn_checkbox_checked_mtrl.xml"
-    },
-    {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_checkbox_checked_mtrl.xml.flat",
+        "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable\\btn_checkbox_checked_mtrl.xml"
     },
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_summary.xml.flat",
@@ -276,12 +276,12 @@
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_crop__ic_cancel.png.flat",
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\b18b62554ffaa459ce3dc17c3b68780f\\res\\drawable-hdpi\\crop__ic_cancel.png"
+    },
+    {
+        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\color_design_tint_password_toggle.xml.flat",
@@ -292,12 +292,12 @@
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_ripple_color.xml.flat",
-        "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\2e3a5376fa390aee52a569a5c8fad15b\\res\\color\\mtrl_tabs_ripple_color.xml"
-    },
-    {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\2e3a5376fa390aee52a569a5c8fad15b\\res\\color\\mtrl_fab_ripple_color.xml"
+    },
+    {
+        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_ripple_color.xml.flat",
+        "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\2e3a5376fa390aee52a569a5c8fad15b\\res\\color\\mtrl_tabs_ripple_color.xml"
     },
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -312,12 +312,12 @@
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\7f7347e2e337829b52ce86e46b5e93fb\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_crop__selectable_background.xml.flat",
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\b18b62554ffaa459ce3dc17c3b68780f\\res\\drawable-v21\\crop__selectable_background.xml"
+    },
+    {
+        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_background.png.flat",
@@ -1278,10 +1278,6 @@
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_text_color.xml.flat",
         "source": "C:\\Users\\18015497\\.gradle\\caches\\transforms-2\\files-2.1\\2e3a5376fa390aee52a569a5c8fad15b\\res\\color\\mtrl_chip_text_color.xml"
-    },
-    {
-        "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_choose_model.xml.flat",
-        "source": "D:\\fimageclassificationv2\\app\\src\\main\\res\\layout\\activity_choose_model.xml"
     },
     {
         "merged": "D:\\fimageclassificationv2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",

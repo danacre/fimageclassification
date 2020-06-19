@@ -1234,8 +1234,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id inception_float
-id inception_quant
 id info
 id invisible
 id italic
@@ -1448,7 +1446,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_act_l
-layout activity_choose_model
 layout activity_classify
 layout activity_edit
 layout activity_list
