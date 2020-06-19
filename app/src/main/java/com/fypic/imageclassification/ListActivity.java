@@ -23,8 +23,8 @@ public class ListActivity extends AppCompatActivity {
 
     DatabaseHelper db;
     private ListView lv;
-    int fl;
-    int sl;
+    int materialid;
+    int objectid;
     Button allBtn,paperBtn, metalBtn, plasticBtn, wasteBtn, summaryBtn;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -54,50 +54,50 @@ public class ListActivity extends AppCompatActivity {
         ArrayList<Object> wasteObj = new ArrayList<>();
 
         while(data.moveToNext()){
-            fl = data.getInt(1);
-            sl = data.getInt(0);
+            materialid = data.getInt(1);
+            objectid = data.getInt(0);
 
-            Object obj = new Object(sl,fl);
+            Object obj = new Object(objectid,materialid);
             listObj.add(obj);
         }
 
         while(alldata.moveToNext()){
-            fl = alldata.getInt(1);
-            sl = alldata.getInt(0);
+            materialid = alldata.getInt(1);
+            objectid = alldata.getInt(0);
 
-            Object obj = new Object(sl,fl);
+            Object obj = new Object(objectid,materialid);
             allObj.add(obj);
         }
 
         while(paperdata.moveToNext()){
-            fl = paperdata.getInt(1);
-            sl = paperdata.getInt(0);
+            materialid = paperdata.getInt(1);
+            objectid = paperdata.getInt(0);
 
-            Object obj = new Object(sl,fl);
+            Object obj = new Object(objectid,materialid);
             paperObj.add(obj);
         }
 
         while(metaldata.moveToNext()){
-            fl = metaldata.getInt(1);
-            sl = metaldata.getInt(0);
+            materialid = metaldata.getInt(1);
+            objectid = metaldata.getInt(0);
 
-            Object obj = new Object(sl,fl);
+            Object obj = new Object(objectid,materialid);
             metalObj.add(obj);
         }
 
         while(plasticdata.moveToNext()){
-            fl = plasticdata.getInt(1);
-            sl = plasticdata.getInt(0);
+            materialid = plasticdata.getInt(1);
+            objectid = plasticdata.getInt(0);
 
-            Object obj = new Object(sl,fl);
+            Object obj = new Object(objectid,materialid);
             plasticObj.add(obj);
         }
 
         while(wastedata.moveToNext()){
-            fl = wastedata.getInt(1);
-            sl = wastedata.getInt(0);
+            materialid = wastedata.getInt(1);
+            objectid = wastedata.getInt(0);
 
-            Object obj = new Object(sl,fl);
+            Object obj = new Object(objectid,materialid);
             wasteObj.add(obj);
         }
 
